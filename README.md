@@ -1,1 +1,10 @@
-landing-page
+# The Landing Page project.
+
+### What is this project?
+
+> This is simply a project in the last section of [Flexbox](https://www.theodinproject.com/paths/foundations/courses/foundations#flexbox) in The Odin Project website.
+
+### The languages used in this project
+
+
+-> **HTML & CSS** only.
