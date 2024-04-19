@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Pixelify Sans", sans-serif;
+  font-family: "Pixelify Sans", serif;
 }
 
 body {
@@ -46,10 +46,6 @@ a:hover {
   margin-left: 140px;
 }
 
-/* HEADER DONE */
-
-/* ------------------------------- */
-
 .hero {
   background-color: #1f2937;
   display: flex;
@@ -80,7 +76,7 @@ p {
 .sign-up {
   font-weight: bold;
   font-size: 15px;
-  width: 120px;
+  width: 150px;
   margin-top: 10px;
   color: white;
   background-color: #3882f6;
@@ -91,9 +87,6 @@ p {
 .sign-up:hover {
   background-color: #275fb9;
 }
-
-/* HERO DONE */
-/* -------------------------- */
 
 .information {
   font-size: 36px;
@@ -114,6 +107,11 @@ p {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.boxes img {
+  max-width: 100%;
+  height: auto;
 }
 
 .box {
@@ -154,8 +152,6 @@ p {
   justify-content: flex-end;
 }
 
-/* ---------------------------- */
-
 .sign-up-prompt .container {
   margin-top: 80px;
   margin-bottom: 80px;
@@ -168,13 +164,14 @@ p {
 }
 
 .sign-up-prompt h1 {
+  font-size: 20;
   font-weight: bold;
   color: #eee;
 }
 
 .sign-up-prompt button {
   margin-right: 70px;
-  width: 120px;
+  width: 150px;
   font-weight: bold;
   font-size: 15px;
   color: white;
@@ -185,7 +182,7 @@ p {
 }
 
 .sign-up-prompt .prompt {
-  font-family: "Pixelify Sans";
+  font-family: serif;
 }
 
 footer {
