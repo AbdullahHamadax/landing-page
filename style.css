@@ -100,7 +100,7 @@ p {
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .wrapper {
@@ -126,14 +126,13 @@ p {
 
 .quote {
   background-color: #e5e7eb;
-  padding: 140px;
+  padding: 120px;
 }
 
 .quote .q {
   font-size: 40px;
   color: #1f2937;
   font-style: italic;
-  padding: 100px;
   font-family: "VT323";
 }
 
