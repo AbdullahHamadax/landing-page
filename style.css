@@ -10,11 +10,6 @@ body {
   flex-direction: column;
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
 ul {
   display: flex;
   gap: 16px;
@@ -51,8 +46,11 @@ a:hover {
   display: flex;
   align-items: center;
   min-height: 400px;
-  gap: 300px;
-  flex: 1;
+  gap: 600px;
+}
+
+.hero .container {
+  margin-left: 80px;
 }
 
 img {
@@ -60,13 +58,13 @@ img {
   max-width: 800px;
 }
 
-h1 {
+.hero h1 {
   color: #f9faf8;
   font-size: 48px;
   font-weight: bolder;
 }
 
-p {
+.hero p {
   margin-top: 10px;
   font-size: 18px;
   color: #e5e7eb;
@@ -127,6 +125,8 @@ p {
 .quote {
   background-color: #e5e7eb;
   padding: 120px;
+  display: flex;
+  justify-content: center;
 }
 
 .quote .q {
@@ -149,6 +149,7 @@ p {
   font-family: "VT323";
   display: flex;
   justify-content: flex-end;
+  margin-top: 20px;
 }
 
 .sign-up-prompt .container {
@@ -156,10 +157,14 @@ p {
   margin-bottom: 80px;
   background-color: #3882f6;
   border-radius: 6px;
-  padding: 40px;
+  padding: 50px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.sign-up-prompt {
+  display: flex;
+  justify-content: center;
 }
 
 .sign-up-prompt h1 {
@@ -168,9 +173,13 @@ p {
   color: #eee;
 }
 
+.sign-up-prompt p {
+  color: #eee;
+}
+
 .sign-up-prompt button {
-  margin-right: 70px;
-  width: 150px;
+  margin-left: 70px;
+  max-width: 150px;
   font-weight: bold;
   font-size: 15px;
   color: white;
@@ -182,6 +191,11 @@ p {
 
 .sign-up-prompt .prompt {
   font-family: serif;
+}
+
+.sign-up:hover,
+.sign-up-prompt button:hover {
+  background-color: #275fb9;
 }
 
 footer {
@@ -197,9 +211,4 @@ footer .container {
   flex-direction: column;
   justify-content: end;
   align-content: flex-end;
-}
-
-.sign-up:hover,
-.sign-up-prompt button:hover {
-  background-color: #275fb9;
 }
