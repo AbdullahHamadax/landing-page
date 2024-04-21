@@ -1,5 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
 
+:root {
+  --hero-background: #1f2937;
+  --hero-foreground: #f9faf8;
+  --hero-foreground-secondary: #e5e7eb;
+  --hero-main-text-size: 48px;
+  --hero-main-text-weight: 800;
+  --hero-secondary-text-size: 18px;
+  --header-logo-text-size: 24px;
+  --header-logo-text-weight: 700;
+
+  --primary-background: #fff;
+  --primary-foreground: #1f2937;
+  --primary-header-text-size: 36px;
+  --accent: #3882f6;
+  --primary-subtext-size: 16px;
+
+  --quote-background: #e5e7eb;
+  --quote-foreground: #1f2937;
+  --quote-text-size: 36px;
+  --quote-text-style: italic;
+
+  --information-header-text-weight: 800;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,13 +43,13 @@ ul {
 }
 
 a {
-  color: #e5e7eb;
+  color: var(--hero-foreground);
   font-size: 25px;
   text-decoration: none;
+  transition: all 0.15s;
 }
 
 a:hover {
-  text-decoration: underline;
   color: #3882f6;
 }
 
@@ -73,19 +97,22 @@ img {
   font-family: serif;
 }
 
-.sign-up {
+.get-started {
   font-weight: bold;
   font-size: 15px;
-  width: 150px;
   margin-top: 10px;
   color: white;
-  background-color: #3882f6;
-  padding: 8px 16px;
-  border-radius: 7px;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: solid 1px var(--hero-foreground);
+  cursor: pointer;
+  transition: all 0.15s;
 }
 
-.sign-up:hover {
-  background-color: #275fb9;
+.get-started:hover {
+  color: var(--accent);
+  background-color: var(--hero-foreground);
 }
 
 .information {
@@ -135,20 +162,17 @@ img {
   font-size: 40px;
   color: #1f2937;
   font-style: italic;
-  font-family: "VT323";
 }
 
 .quote .quote-text {
   font-size: 40px;
   color: #1f2937;
   font-style: italic;
-  font-family: "VT323";
 }
 
 .quote .quote-author {
   font-size: 40px;
   color: #1f2937;
-  font-family: "VT323";
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
@@ -186,9 +210,10 @@ img {
   font-size: 15px;
   color: white;
   background-color: #3882f6;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   border: 2px solid white;
-  border-radius: 5px;
+  border-radius: 0.25rem;
+  cursor: pointer;
 }
 
 .sign-up-prompt .prompt {
